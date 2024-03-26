@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monster Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Monster Details</h2>
+        <form enctype="multipart/form-data" action="savemonster.php" method="post">
+            <div class="form-group">
+                <label for="txtname">Monster name:</label>
+                <input type="text" name="txtname" id="txtname" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="monsterimage">Monster image:</label>
+                <input type="file" name="monsterimage" id="monsterimage" accept="image/jpeg" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="monsteraudio">Monster sound:</label>
+                <input type="file" name="monsteraudio" id="monsteraudio" accept="audio/basic" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-default">Save</button>
+        </form>
+    </div>
+</body>
+</html>
+
